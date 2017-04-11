@@ -1,0 +1,478 @@
+﻿<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<!--告诉ie去使用最新的ie渲染模式-->
+		<meta http-equiv="X-UA-Compatible" content="IE-edge,chrome=1"/>
+		<!--宽度适应设备的宽度，不允许缩放-->
+		<meta name="viewport" content="width=device-width,initial-scale=1"/>
+		<title>主页</title>
+		<link rel="stylesheet" type="text/css" href="css/font-awesome.min.css"/>
+	<link rel="stylesheet" type="text/css" href="css/css.css"/>
+	</head>
+	<body>
+		<!--倒计时效果-->
+		<div id="countDown">
+			<canvas id="canvas"></canvas>
+		</div>
+		<!--返回顶部-->
+		<a href="javascript:;" class="funhui"></a>		
+		<!--教育-->
+		<div class="scrubber" id="education">
+			<!--年份-->
+			<a href="#College" class="scrubber_year sameSchool">大学</a>
+				<a href="#highSchool" class="scrubber_mouth ">高中</a>
+			<a href="#middleSchool" class="scrubber_mouth ">初中</a>
+		</div>
+		<!--侧边栏样式-->
+		<header class="container-nav">
+			<!--左侧菜单栏-->
+			<div id="nav">
+			<!--上册菜单-->
+				<nav>
+					<ul class="list">
+						<li>
+							<a href="#section-one">
+							<b>HOME</b>
+							<i>首页</i>
+							</a>
+						</li>
+						<li>
+							<a href="#section-two">
+							<b>SKILL</b>
+							<i>技能</i>
+							</a>
+						</li>
+						<li>
+							<a href="#photo-show">
+							<b>PHOTO</b>
+							<i>图片</i>
+							</a>
+						</li>
+						<li class="link">
+							<a href="#section-three">
+							<b>SCHOOL</b>
+							<i>学校</i>
+							</a>
+						</li>
+						<li>
+							<a href="#lastPage">
+							<b>SUGGEST</b>
+							<i>建议</i>
+							</a>
+						</li>
+					</ul>
+				</nav>
+				<!--微信扫码-->
+				<div class="wx">
+					<div class="img-small"></div>
+					<img src="img/wx.png"/>
+					<p>微信扫一扫</p>
+					<p>188-0709-8734</p>
+					<p><a href="https://mail.qq.com">1149587376@qq.com</a></p>
+				</div>
+			</div>
+			<!--开关按钮-->
+			<div class="switch">=</div>
+		</header>
+			<!--主体容器-->
+			<div id="container">
+				<!--第一页部分-->
+				<header class="section" id="section-one">
+					<!--焦点轮播图-->
+					<section id="seamless">
+						<!--图片-->
+						<ul class="lol">
+							<li><a href="#"><img src="img/1.jpg"/></a></li>
+							<li><a href="#"><img src="img/2.jpg"/></a></li>
+							<li><a href="#"><img src="img/3.jpg"/></a></li>
+							<li><a href="#"><img src="img/4.jpg"/></a></li>
+						</ul>
+						<!--无缝按钮-->
+						<ul class="num"> 
+						</ul>
+						<!--左右切换按钮-->
+						<div class="btn btnL"></div>
+						<div class="btn btnR"></div>
+					</section>
+				</header>
+				<!--第二页-->
+				<!--介绍-->
+				<section class="section" id="section-two">
+					<!--自我介绍-->
+					<div class="my-introduce clear">
+						<h1>WELCOME TO MY WEB</h1>
+						<p>你好,我叫汤乾华!</p>
+						<!--书籍-->
+						<div class="study-book">
+							<h3>书籍....!</h3>
+							<ul>
+								<li><a href="javascript:;">《javaScript高级程序设计》</a></li>
+								<li><a href="javascript:;">《javaScript权威指南》</a></li>
+								<li><a href="javascript:;">《javaScript Dom编程艺术》</a></li>
+								<li><a href="javascript:;">《深入浅出JavaScript》</a></li>
+							</ul>
+						</div>
+						<!--我的技能-->
+						<div class="skill clear">
+							<h3>技能....!</h3>
+							<ul>
+								<li>
+									<p>Html</p>
+									<div class="first">
+										<div style="width: 100%;height:100%;background-color:#DEECDF;border-radius:5px ;"></div>
+									</div>
+								</li>
+								<li>
+									<p>Css</p>
+									<div class="first">
+										<div style="width: 90%;height:100%;background-color:#ACB5B8;border-radius:5px ;"></div>
+									</div>
+								</li>
+								<li>
+									<p>Javascript</p>
+									<div class="first">
+										<div style="width: 70%;height:100%;background-color:#78B3AE;border-radius:5px ;"></div>
+									</div>
+								</li>
+								<li>
+									<p>jQuery</p>
+									<div class="first">
+										<div style="width: 75%;height:100%;background-color:#8C9D82;border-radius:5px ;"></div>
+									</div>
+								</li>
+							</ul>
+						</div>
+					</div>
+					
+					<!--分析，设计，实现-->
+						<div class="analyse">
+							<!--旋转图片的实现-->
+							<div class="box">
+								<div class="link mission-link">
+									<span class="icon animated"></span>
+									<!--<canvas id="can1" width="180" height="180"></canvas>-->
+									<a id="changeCan" class="button" data-title="My mission is clear">
+									<span class="line line-top"></span>
+									<span class="line line-right"></span>
+									<span class="line line-bottom"></span>
+									<span class="line line-left"></span>
+									分析
+									</a>
+								</div>
+								<div class="link play-link">
+									<!--<canvas id="can2" width="180" height="180"></canvas>-->
+									<span class="icon animated"></span>
+									<a class="button" data-title="This is my playground">
+									<span class="line line-top"></span>
+									<span class="line line-right"></span>
+									<span class="line line-bottom"></span>
+									<span class="line line-left"></span>
+									设计
+									</a>
+								</div>
+								<div class="link touch-link">
+									<!--<canvas id="can3" width="180" height="180"></canvas>-->
+									<span class="icon animated"></span>
+									<a class="button" data-title="This is my playground demos">
+									<span class="line line-top"></span>
+									<span class="line line-right"></span>
+									<span class="line line-bottom"></span>
+									<span class="line line-left"></span>
+									实现
+									</a>
+								</div>
+								<p class="tip"><em></em><span></span></p>
+						</div>
+					</div>
+				</section>
+				<!--第三页部分-->
+				<section class="section" id="photo-show">
+					<div id="parent-container">
+						<!--我的能力-->
+						<div class="abilities">
+							<p>
+								优秀的网页设计
+							</p>
+							<span></span>
+							<s>自定义实现图片弹出动画插件</s>
+						</div>
+						<div class="toggleSanme">
+							<img src="img/images/1-1.jpg" 
+							class="js-linghtbox"  data-role="lightbox"
+							data-source="img/images/1-1.jpg"
+							data-group="group-1"
+							data-id="aaaaa"
+							data-caption="优秀的设计"
+							width="180px" height="180px"
+							/>
+							<img src="img/images/1-2.jpg" 
+							class="js-linghtbox"  data-role="lightbox"
+							data-source="img/images/1-2.jpg"
+							data-group="group-1"
+							data-id="bbbbb"
+							data-caption="优秀的设计"
+							width="180px" height="180px"
+							/>
+							<img src="img/images/1-3.jpg" 
+							class="js-linghtbox"  data-role="lightbox"
+							data-source="img/images/1-3.jpg"
+							data-group="group-1"
+							data-id="ccccc"
+							data-caption="优秀的设计"
+							width="180px" height="180px"
+							/>
+							<img src="img/images/1-4.jpg" 
+							class="js-linghtbox"  data-role="lightbox"
+							data-source="img/images/1-4.jpg"
+							data-group="group-1"
+							data-id="ccccc"
+							data-caption="优秀的设计"
+							width="180px" height="180px"
+							/>
+							<img src="img/images/1-5.jpg" 
+							class="js-linghtbox"  data-role="lightbox"
+							data-source="img/images/1-5.jpg"
+							data-group="group-1"
+							data-id="ccccc"
+							data-caption="优秀的设计"
+							width="180px" height="180px"
+							/>
+						</div>
+						
+						<div class="toggleSanme">
+							<img src="img/images/2-1.jpg" 
+							class="js-linghtbox"  data-role="lightbox"
+							data-source="img/images/2-1.jpg"
+							data-group="group-2"
+							data-id="ddddd"
+							data-caption="优秀的设计"
+							width="180px" height="180px"/>
+							<img src="img/images/2-2.jpg" 
+							class="js-linghtbox"  data-role="lightbox"
+							data-source="img/images/2-2.jpg"
+							data-group="group-2"
+							data-id="ddddd"
+							data-caption="优秀的设计"
+							width="180px" height="180px"/>
+							<img src="img/images/2-3.jpg" 
+							class="js-linghtbox"  data-role="lightbox"
+							data-source="img/images/2-3.jpg"
+							data-group="group-2"
+							data-id="ddddd"
+							data-caption="优秀的设计"
+							width="180px" height="180px"/>
+							<img src="img/images/2-4.jpg" 
+							class="js-linghtbox"  data-role="lightbox"
+							data-source="img/images/2-4.jpg"
+							data-group="group-2"
+							data-id="ddddd"
+							data-caption="优秀的设计"
+							width="180px" height="180px"/>
+							<img src="img/images/2-5.jpg" 
+							class="js-linghtbox"  data-role="lightbox"
+							data-source="img/images/2-5.jpg"
+							data-group="group-2"
+							data-id="ddddd"
+							data-caption="优秀的设计"
+							width="180px" height="180px"/>
+						</div>
+						<!--注释部分-->
+					</div>
+
+				</section>
+				<!--经历-->
+				<section class="my-history" id="section-three">
+					<!--我的能力-->
+					<div class="abilities" style="height: 10%;">
+						<p>
+							教育
+						</p>
+						<span></span>
+
+					</div>
+					<!--主要内容区域-->
+					<div class="container-main">
+						
+						<!--个人经历标签-->
+						<div class="content" id="College">
+							<!--年份月份标签-->
+							<div class="content_year">2013</div>
+							<div class="content_year">9月</div>
+							<!--经历的详细结构，成员-->
+							<div class="content_item">
+								<!--小三角样式-->
+								<div class="content_item_arrow"></div>
+								<!--圆角样式-->
+								<div class="content_icon_dot">
+									<!--圆角中的背景图标-->
+									<div class="content_icon_dot_child"></div>
+								</div>
+								<!--经历的时间跟内容区域-->
+								<div class="content_item_head">
+									<!--标题-->
+									<div class="content_item_head_title">
+										<!--农历月份-->
+										<div class="content_item_head_title_lunar">大<br>&nbsp;学</div>
+										2013-09-01
+									</div>
+									<!--内容介绍-->
+									<div class="content_item_head_intro">
+										南昌大学软件学院
+										<!--百度地图-->
+										<div class="toggleMap">
+											<i class="fa fa-map-marker baiduMap" aria-hidden="true"></i>
+
+										</div>
+									</div>
+								</div>
+								<!--内容图片-->
+								<div class="content_item_media">
+									<img src="img/history/ncu.png" width="370px"/>
+								</div>
+								<div class="content_item_footer"></div>、
+							</div>
+						</div>
+						<div class="content" id="highSchool">
+							<!--年份月份标签-->
+							<div class="content_year">2010</div>
+							<div class="content_year">9月</div>
+							<!--经历的详细结构，成员-->
+							<div class="content_item">
+								<!--小三角样式-->
+								<div class="content_item_arrow"></div>
+								<!--圆角样式-->
+								<div class="content_icon_dot">
+									<!--圆角中的背景图标-->
+									<div class="content_icon_dot_child"></div>
+								</div>
+								<!--经历的时间跟内容区域-->
+								<div class="content_item_head">
+									<!--标题-->
+									<div class="content_item_head_title">
+										<!--农历月份-->
+										<div class="content_item_head_title_lunar">中<br>&nbsp;学</div>
+										2010-09-01
+									</div>
+									<!--内容介绍-->
+									<div class="content_item_head_intro">
+										鄱阳中学
+										<!--百度地图-->
+										<div class="toggleMap">
+											<i class="fa fa-map-marker baiduMap" aria-hidden="true"></i>
+
+										</div>
+									</div>
+								</div>
+								<!--内容图片-->
+								<div class="content_item_media">
+									<img src="img/history/pz.jpg" width="370px"/>
+								</div>
+								<div class="content_item_footer"></div>、
+							</div>
+						</div>
+						<div class="content" id="middleSchool">
+							<!--年份月份标签-->
+							<div class="content_year">2007</div>
+							<div class="content_year">9月</div>
+							<!--经历的详细结构，成员-->
+							<div class="content_item">
+								<!--小三角样式-->
+								<div class="content_item_arrow"></div>
+								<!--圆角样式-->
+								<div class="content_icon_dot">
+									<!--圆角中的背景图标-->
+									<div class="content_icon_dot_child"></div>
+								</div>
+								<!--经历的时间跟内容区域-->
+								<div class="content_item_head">
+									<!--标题-->
+									<div class="content_item_head_title">
+										<!--农历月份-->
+										<div class="content_item_head_title_lunar">初<br>&nbsp;中</div>
+										2007-09-01
+									</div>
+									<!--内容介绍-->
+									<div class="content_item_head_intro">
+										鄱阳二中
+										<!--百度地图-->
+										<div class="toggleMap">
+											<i class="fa fa-map-marker baiduMap" aria-hidden="true"></i>
+										</div>
+									</div>
+								</div>
+								<!--内容图片-->
+								<div class="content_item_media">
+									<img src="img/history/ez.jpg" width="370px"/>
+								</div>
+								<div class="content_item_footer"></div>、
+							</div>
+						</div>
+					</div>
+				</section>
+				<!--最后一页-->
+				<section class="section" id="lastPage">
+					<div style="width: 100%;height: 30%;">
+						<!--练习我-->
+						<div class="abilities">
+							<p>
+								联系我
+							</p>
+							<span></span>
+							<s>江西省-上饶市-鄱阳县-双港镇</s>
+						</div>
+					</div>
+					<!--地址，邮箱，联系电话-->
+					<div class="contactWay" style="width: 100%;height: 15%;" align="center">
+						<!--地址-->
+						<div class="address">
+							<!--45*40-->
+							<p class="icon"><i class="fa fa-home" aria-hidden="true"></i></p>
+							<span>江西省上饶市鄱阳县</span>
+						</div>
+						<!--邮箱-->
+						<div class="email">
+							<p class="icon"><i class="fa fa-envelope" aria-hidden="true"></i></p>
+							<span>1149587376@qq.com</span>
+						</div>
+						<!--联系方式-->
+						<div class="phone">
+							<p class="icon"><i class="fa fa-phone" aria-hidden="true"></i></p>
+							<span>+86-188-0709-8734</span>
+						</div>
+					</div>
+					<!--留言区域-->
+					<div style="width: 100%;height: 55%;" align="center" class="Message">
+						<p>留言区域</p>
+						<form action="" method="post" id="form_id">
+							<div class="row">
+								<input type="text" name="name" id="useid" placeholder="输入姓名"  required pattern="[a-zA-Z0-9]{3,6}" autocomplete="off"/>
+								<input type="email" name="email" id="email" placeholder="输入邮箱" required  autocomplete="off"/>
+							</div>
+							<div class="group_main">
+								<textarea name="main"  placeholder="输入内容" id="substance" required minlength="10" autocomplete="off"></textarea>
+							</div>
+							<input type="submit" value="提交" id="suBtn"/>
+						</form>
+						<!--<div class="list">
+							<ul>
+								<li><a href="javascript:;"><i class="fa fa-weixin" aria-hidden="true"></i></a></li>
+								<li><a href="javascript:;"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
+								<li><a href="javascript:;"><i class="fa fa-git" aria-hidden="true"></i></a></li>
+								<li><a href="javascript:;"><i class="fa fa-google-plus" aria-hidden="true"></i></a></li>
+								<li><a href="javascript:;"><i class="fa fa-linkedin" aria-hidden="true"></i></a></li>
+								<li><a href="javascript:;"><i class="fa fa-youtube" aria-hidden="true"></i></a></li>
+							</ul>
+						</div>-->
+					</div>
+				</section>
+			</div>
+			<!--主体样式结束-->
+	<script src="js/jquery-1.11.3.js" type="text/javascript" charset="utf-8"></script>
+	<script src="js/countDown.js" type="text/javascript" charset="utf-8"></script>
+	<script src="js/app.js" type="text/javascript" charset="utf-8"></script>
+	</body>
+</html>
+
+			
+				

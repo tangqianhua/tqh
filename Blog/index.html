@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<link rel="stylesheet" type="text/css" href="css/css.css"/>
+	</head>
+	<body>
+		<div id="container" class="clear">
+			<!--导航条-->
+			<div id="header">
+				<div class="logo"><h3>TQH的博客</h3></div>
+				<div class="member">个人中心
+					<ul class="member_ul">
+						<li><a href="javascript:;" class="showText">发文</a></li>
+						<li><a href="javascript:;" class="replace">换肤</a></li>
+						<li><a href="javascript:;">帮助</a></li>
+						<li><a href="javascript:;" class="exit">退出</a></li>
+					</ul>
+				</div>
+				<b></b>
+				<div class="login">登录</div>
+				<div class="reg">注册</div>
+				<div class="welcome"></div>
+			</div>
+			<!--全屏遮罩层-->
+			<div id="screen"></div>
+		</div>
+		<!--登录弹出层-->
+		<div id='login'>
+			<h2>登录<span class="close"></span></h2>
+			<form action="" method="post">
+				<div class="info"></div>
+				<div class="user">账 号:<input type="text" name="uname" class="text unameval"/></div>
+				<div class="upwd"> 密 码:<input type="password" name="upwd" class="text upwdval"/></div>
+				<div class="button"><input type="button" value="登录" class="sub"/></div>
+				<div class="other">注册新用户|忘记密码?</div>
+			</form>
+		</div>
+		<div id="reg">
+			<h2>注册<span class="close"></span></h2>
+			<form>
+				<ul>
+					<li>
+						<input class="uname" type="text" name="uname" placeholder="请输入要注册的账号"/>
+					</li>
+					<li>
+						<input class="upwd" type="text" name="puwd" placeholder="请输入密码"/>
+					</li>
+					<li>
+						<input class="surepwd" type="password"  name="surepwd" placeholder="请输入确认密码"/>
+					</li>
+					<li class="yz"><div class="icon"></div><div class="formright"></div></li>
+					<li><a class="onsub" >注册</a></li>
+				</ul>
+			</form>
+		</div>
+		<!--更换皮肤-->
+		<!--1230*501-->
+		<!--200 163-->
+		<div class="skin">
+			<h2>更换皮肤<span class="close"></span></h2>
+			<div class="skin_bg">
+			</div>
+		</div>
+		<!--发表文章-->
+		<div class="blog">
+			<h2>文章发表<span class="close"></span></h2>
+			<div class="textInfo"></div>
+			<form name="blog" class="publications ">
+				<dl>
+					<dt>标&nbsp;&nbsp;题:<input type="" name="title" class="title test" />(*不可为空)</dt>
+					<dd>
+						<span style="vertical-align: 85px;">内&nbsp;&nbsp;容</span>
+						<textarea name="content" class="content test"></textarea><span style="vertical-align: 45px;">(*不可为空)</span>
+					</dd>
+					<dd style="padding: 0 0 0 60px;">
+						<a name="sub" class="submit">发表</a>
+					</dd>
+				</dl>
+			</form>
+		</div>
+		<!--导航条-->
+		<div class="navBar clear">
+			<ul class="about">
+				<li></li>
+				<li></li>
+				<li></li>
+				<li></li>
+				<li></li>
+			</ul>
+			<ul class="black">
+				<li>首页</li>
+				<li>博文列表</li>
+				<li>建设中</li>
+				<li>建设中</li>
+				<li>建设中</li>
+			</ul>
+			<div class="nav_bg">
+				<ul class="white">
+					<li>首页</li>
+					<li>博文列表</li>
+					<li>建设中</li>
+					<li>建设中</li>
+					<li>建设中</li>
+				</ul>
+			</div>
+		</div>
+		<!--主页面-->
+		<div class="main clear">
+			<!--左侧-->
+			<div class="slidebar">
+				<h2>前端书籍</h2>
+				<ul>
+					<li><a href="javascript:;">《精通HTML》</a></li>
+					<li><a href="javascript:;">《精通CSS》</a></li>
+					<li><a href="javascript:;">《JavaScript DOM 编程艺术》</a></li>
+					<li><a href="javascript:;">《JavaScript语言精粹》</a></li>
+					<li><a href="javascript:;">《JavaScript高级程序设计》</a></li>
+				</ul>
+				<h2>JAVA书籍</h2>
+				<ul>
+					<li><a href="javascript:;">《head first java》</a></li>
+					<li><a href="javascript:;">《java核心技术卷1-基础知识》</a></li>
+					<li><a href="javascript:;">《head first servlet jsp》</a></li>
+					<li><a href="javascript:;">《head first ejb》</a></li>
+					<li><a href="javascript:;">《java编程思想》</a></li>
+				</ul>
+				<h2>哲学书籍</h2>
+				<ul>
+					<li><a href="javascript:;">《苏菲的世界》</a></li>
+					<li><a href="javascript:;">《你不可不读的西方哲学故事》</a></li>
+					<li><a href="javascript:;">《哲学的故事》</a></li>
+					<li><a href="javascript:;">《尼各马可伦理学》</a></li>
+					<li><a href="javascript:;">《人类理智新论》</a></li>
+				</ul>
+			</div>
+			<!--右侧-->
+			<div class="index">
+				
+			</div>
+			<!--广告条-->
+			<div class="banner">
+				<img src="img/1.jpg" alt="第一张图片" />
+				<img src="img/2.jpg" alt="第二张图片" />
+				<img src="img/3.jpg" alt="第三张图片" />
+				<ul>
+					<li>●</li>
+					<li>●</li>
+					<li>●</li>
+				</ul>
+				<span></span>
+				<strong></strong>
+			</div>
+			<!--图片加载-->
+			<div class="phone">
+				<dl>
+					<dt><img xsrc="img/L1.jpeg" src="img/loading.gif" bigsrc="img/L1_big.jpg" alt="" class="img_load"/></dt>
+					<dd>延迟加载</dd>
+				</dl>
+				<dl>
+					<dt><img xsrc="img/L2.jpg" src="img/loading.gif" bigsrc="img/L2_big.jpg"  alt=""  class="img_load"/></dt>
+					<dd>延迟加载</dd>
+				</dl>
+				<dl>
+					<dt><img xsrc="img/L3.jpg" src="img/loading.gif" bigsrc="img/L3_big.jpg"  alt="" class="img_load"/></dt>
+					<dd>延迟加载</dd>
+				</dl>
+				<dl>
+					<dt><img xsrc="img/L4.jpg" src="img/loading.gif" bigsrc="img/L4_big.jpg"  alt="" class="img_load" /></dt>
+					<dd>延迟加载</dd>
+				</dl>
+				<dl>
+					<dt><img xsrc="img/L5.jpg" src="img/loading.gif" bigsrc="img/L5_big.jpg"  alt="" class="img_load"/></dt>
+					<dd>延迟加载</dd>
+				</dl>
+				<dl>
+					<dt><img xsrc="img/L6.jpg" src="img/loading.gif" bigsrc="img/L6_big.jpg"  alt="" class="img_load"/></dt>
+					<dd>延迟加载</dd>
+				</dl>
+				<dl>
+					<dt><img xsrc="img/L7.jpg" src="img/loading.gif" bigsrc="img/L7_big.jpg"  alt="" class="img_load"/></dt>
+					<dd>延迟加载</dd>
+				</dl>	
+				<dl>
+					<dt><img xsrc="img/L2.jpg" src="img/loading.gif" bigsrc="img/L2_big.jpg"  alt="" class="img_load"/></dt>
+					<dd>延迟加载</dd>
+				</dl>
+			</div>
+			<div class="phone_big">
+				<h2>图片展示<span class="close"></span></h2>
+				<div class="big">
+					<img src="img/loading.gif" alt="" />
+					<!--左右切换按钮-->
+					<span class="sl"></span>
+					<span class="sr"></span>
+					<b class="left"></b>
+					<b class="right"></b>
+					<!--下标-->
+					<s></s>
+				</div>
+			</div>
+		</div>
+		<div class="footer">
+			<p>汤乾华的博客</p>
+			<p>Copyright (c) 2016  赣B2-20050168号/网备36011002000011号</p>
+		</div>
+		<script src="js/jquery-1.11.3.js" type="text/javascript" charset="utf-8"></script>
+		<!--<script src="js/base.js" type="text/javascript" charset="utf-8"></script>-->
+		<script src="js/index.js" type="text/javascript" charset="utf-8"></script>
+	</body>
+</html>

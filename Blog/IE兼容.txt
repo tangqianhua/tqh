@@ -1,0 +1,44 @@
+﻿网址:http://6.tangqianhua.applinzi.com/
+e ||event   //event事件
+window.getComputedStyle  || currentStyle
+window.innerWidth ||document.documentElement.clientWidth//获得浏览器可视区域的宽度
+window.innerHeight ||document.documentElement.clientHeight//获得浏览器可视区域的高度
+e.preventdefault()||event.returnValue()//阻止默认行为
+obj.addEventListener("click",fn) || obj.attachEvent("onclick",fn)   //事件监听
+obj.removeEventListener("click",fn) || obj.detachEvent("onclick",fn)   //移除事件监听
+opacity:0.2; || filter:alpha(opacity=20)  //透明度
+获得元素的标签名
+event.srcElement.tagName=="H2" ||e.target.tagName=="H2"
+
+
+
+
+//数据库
+SET NAMES 'utf8';
+		DROP DATABASE IF EXISTS blog;
+		CREATE DATABASE blog CHARSET=UTF8;
+		USE blog;
+		CREATE TABLE blog_user(
+		    id INT PRIMARY KEY AUTO_INCREMENT,
+		    uname VARCHAR(20),
+		    upwd VARCHAR(64)
+		);
+		CREATE TABLE blog_blog(
+		    id INT PRIMARY KEY AUTO_INCREMENT,
+		    title VARCHAR(50),
+		    content TEXT,
+		    date DATETIME
+		);
+		CREATE TABLE blog_skin(
+		    id INT PRIMARY KEY AUTO_INCREMENT,
+		    small_bg VARCHAR(200),
+		    big_bg VARCHAR(200),
+		    bg_color VARCHAR(200),
+		    bg_text VARCHAR(200)
+		);
+		insert into blog_skin values(null,'skin_small1.png','skin_1.png','#E6DAC8','皮肤1',1);
+		insert into blog_skin values(null,'skin_small2.png','skin_2.png','#E9DFC6','皮肤2',0);
+		insert into blog_skin values(null,'skin_small3.png','skin_3.png','#E1D6C0','皮肤3',0);
+		insert into blog_skin values(null,'skin_small4.png','skin_4.png','#CFE3DC','皮肤4',0);
+		insert into blog_skin values(null,'skin_small5.png','skin_5.png','#FFFFFF','皮肤5',0);
+		insert into blog_skin values(null,'skin_small6.png','skin_6.png','#C9DEC7','皮肤6',0);

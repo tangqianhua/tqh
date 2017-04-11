@@ -1,0 +1,306 @@
+@import "bootstrap.less";
+/*设置body的样式，让所有的页面距离顶部为50px*/
+body{
+  margin-top:50px;
+  font-size: 14px;
+}
+/*导航条*/
+.nav-list-header{
+  position: fixed;
+  top: 0;
+  height: 50px;
+  width: 100%;
+  z-index: 100;
+  .navbar-brand>a{
+    color: #A7E615;
+    text-decoration: none;
+  }
+}
+.section{
+  overflow: hidden;
+}
+/*下拉菜单样式*/
+#my-collapse{
+  z-index: 1000000;
+}
+.container{height: 100%}
+.item-1{
+  background: url("../img/bg1.jpg") no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+}
+#fullpage{
+  z-index: 0;
+  .corner{
+    /*四边的图形*/
+    position: absolute;
+    -webkit-transform: rotate(-100deg);
+    -moz-transform: rotate(-100deg);
+    -ms-transform: rotate(-100deg);
+    -o-transform: rotate(-100deg);
+    transform: rotate(-100deg);
+  }
+  .corner1{
+     left: 5%;
+     top: 5%;
+  }
+  .corner2{
+    left: 5%;
+    bottom: 7%;
+  }
+  .corner3{
+    right: 5%;
+    top: 5%;
+  }
+  .corner4{
+    right: 5%;
+    bottom: 7%;
+  }
+}
+/*第一页的文字*/
+.cp{
+  .col-xs-12>h1{
+    font-size: 50px;
+    font-weight: 700;
+    color: #0A9676;
+    text-shadow: 5px -2px 8px #151414;
+    -webkit-transform: scale(0);
+    -moz-transform: scale(0);
+    -ms-transform: scale(0);
+    -o-transform: scale(0);
+    transform: scale(0);
+  }
+  .box{
+    font-size: 15px;
+    font-weight:bold;
+    color: #fff;
+    margin-left:9999px;
+  }
+}
+/*转换成表格形式，让里面的所有元素都居中*/
+.fu-tableCell{
+  display: table-cell;
+  vertical-align: middle;
+  width: 1%;
+  position: relative;
+}
+/*按钮，转到第二页*/
+.btn-down{
+  display: block;
+  width: 70px;
+  height: 70px;
+  border-radius: 50%;
+  line-height: 70px;
+  border: 1px solid #aaa;
+  background-color: rbga(0,0,0,.2);
+  text-align: center;
+  margin-left: -35px;
+}
+/*按钮中的图标*/
+.btn-down>span{
+  font-size: 30px;
+  line-height: 70px;
+  color: #42fffc;
+}
+.btn-down:hover{
+  background-color: rgba(0,0,0,.3);
+}
+/*按钮的位置*/
+.next-page{
+  position:absolute;
+  left: 50%;
+  bottom: 10%;
+  margin-left: -35px;
+}
+/*第二页的背景图片*/
+.item2{
+  background: url("../img/base.jpg");
+  background-size: cover;
+  color:#fff;
+  .hidden-xs h2{
+    color: #fff;
+    font-size: 50px;
+    font-weight: 400;
+  }
+  /*标题*/
+  .page2-title{
+    margin-top: -50%;
+  }
+  .page2-img{
+    margin-top: 5%;
+  }
+  .glass,.hat,.book,.tel{
+    -webkit-transform: scale(0);
+    -moz-transform: scale(0);
+    -ms-transform: scale(0);
+    -o-transform: scale(0);
+    transform: scale(0);
+  }
+}
+p.text-justify {
+  font-size: 16px;
+}
+.mySkills{
+  background: url("../img/skills-bg.jpg");
+  background-size: cover;
+}
+.glass{transition: all 1s linear;}
+.glass.glassShow{
+  -webkit-transform: scale(1);
+  -moz-transform: scale(1);
+  -ms-transform: scale(1);
+  -o-transform: scale(1);
+  transform: scale(1);
+}
+.hat{transition: all 1s 1s linear;}
+.hat.hatShow{
+  -webkit-transform: scale(1);
+  -moz-transform: scale(1);
+  -ms-transform: scale(1);
+  -o-transform: scale(1);
+  transform: scale(1);
+}
+.book{transition: all 1s 2s linear;}
+.book.bookShow{
+  -webkit-transform: scale(1);
+  -moz-transform: scale(1);
+  -ms-transform: scale(1);
+  -o-transform: scale(1);
+  transform: scale(1);
+}
+.tel{transition: all 1s 3s linear;}
+.tel.telShow{
+  -webkit-transform: scale(1);
+  -moz-transform: scale(1);
+  -ms-transform: scale(1);
+  -o-transform: scale(1);
+  transform: scale(1);
+}
+.showSkill .skill{
+  text-align: center;
+  //canvas{background: red;margin: 0 auto}
+}
+.mark{
+  position: relative;
+   .doubanMark, .chajianMark, .jdMark{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    color: #fff;
+    text-align: center;
+    background: rgba(0,0,0,.5);
+    -webkit-transform: scale(0);
+    -moz-transform: scale(0);
+    -ms-transform: scale(0);
+    -o-transform: scale(0);
+    transform: scale(0);
+    -webkit-transition:all 0.5s linear;
+    -moz-transition: all 0.5s linear;
+    -ms-transition: all 0.5s linear;
+    -o-transition: all 0.5s linear;
+    transition: all 0.5s linear;
+    overflow: hidden;
+     h3>a,h4{
+       color: #fff;
+     }
+  }
+}
+.mark:hover .show{
+  -webkit-transform: scale(1);
+  -moz-transform: scale(1);
+  -ms-transform: scale(1);
+  -o-transform: scale(1);
+  transform: scale(1);
+}
+.container-fluid{
+  height:100%;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  position: relative;
+  .changeBig{
+    height:50%;
+    width: 100%;
+    background: rgb(240, 245, 246);
+  }
+  .focusMe{
+    position: absolute;
+    top:33.3333333%;
+    height: 33.3333333%;
+    width: 100%;
+    z-index: -1;
+    background: rgb(255, 252, 222);
+  }
+}
+.changeTop{
+  position: absolute;
+  top: 0;
+}
+.changeBottom{
+  position: absolute;
+  bottom: 0;
+}
+.focusMe{
+  text-align:center;
+}
+.focusMe h2{
+  color:#6699cf;
+}
+.focusMe p{
+  margin-top: 10px;
+  font-size:15px;
+  width:60%;
+  margin:0 auto;
+  color:#856464;
+  letter-spacing: 2px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

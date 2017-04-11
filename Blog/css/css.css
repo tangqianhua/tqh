@@ -1,0 +1,645 @@
+body{
+	margin: 0;padding: 0;font-size:14px;color:#809693;
+	font-family:SimHei,sans-serif;
+}
+ul{list-style: none;}
+ul,li,h1,h2,h3,h4,h5,h6,dl,dd,dt,p{
+	margin: 0;
+	padding: 0;
+}
+input,button{outline: none; margin: 0;padding: 0;}
+a{text-decoration: none;color: #333;}
+.clear:after{
+	content: "";
+	display: table;
+	clear: both;
+}
+/*顶部导航*/
+#container{
+	position: relative;
+    width: 100%;
+    height: 50px;
+    background: rgba(248, 248, 248, 0.5);
+    background:#f8f8f8\9;
+    border-bottom: 1px solid #c2bbbb;
+}
+#header{
+	height:50px;
+	width:90%;
+	margin: 0 auto;
+	position: relative;
+}
+/*登录跟个人中心*/
+#header .logo{
+	width: 120px;
+	height: 30px;
+	float: left;
+	color: #6db2e4;
+	line-height:50px;
+	font-size: 15px;
+}
+#header .logo h3{
+	letter-spacing: 1px;
+}
+/*个人中心样式*/
+#header .member{
+	width: 100px;
+	height: 50px;
+	float: right;
+	line-height: 50px;
+	background: url(../img/down.jpg) no-repeat 70px center;
+	cursor: pointer;
+	font-size: 14px;
+}
+/*换肤，退出*/
+#header ul{
+	position: absolute;
+	top: 50px;
+	right: 25px;
+	background: rgba(248, 248, 248, 0.5);
+	background: #f8f8f8\9;
+	width:70px;
+	height: 100px;
+	border:1px solid #c2bbbb;
+	border-top: none;
+	padding: 10px 0 0 0;
+	display: none;
+}
+#header ul li{
+	height: 25px;
+	line-height: 25px;
+	text-indent: 20px;
+	letter-spacing: 1px;
+}
+#header ul li a{display: block;color:#829490;}
+#header ul li a:hover{
+	background: #e3f8fd;
+}
+/*TQH的博客*/
+#header .login,#header .reg, .welcome{
+	float: right;
+	width:35px;
+	height: 50px;
+	line-height: 50px;
+	cursor: pointer;
+}
+.welcome{
+	width: auto;
+	display: none;
+}
+#header b{
+	height: 15px;
+    border: 1px solid #aaa;
+    float: right;
+    margin-top: 16px;
+    margin-left: 5px;
+    margin-right: 7px;
+}
+/*登录，注册*/
+#login,#reg,.phone_big,.blog,.skin{
+	width: 350px;
+	height:  250px;
+	border: 1px solid #f0dbdb;
+	position: absolute;
+	display: none;
+	z-index: 10000;
+	background: #fff;
+}
+/*发表文章*/
+.blog{
+	width: 580px;
+	height: 320px;
+/*	display: block;*/
+}
+.skin{
+	height:470px;
+	width: 650px;
+	/*display: block;*/
+}
+.skin dl{
+	float: left;
+	padding: 10px 0 0 10px;
+}
+.skin dl dt{
+	display: block;
+	cursor: pointer;
+}
+.skin dl dd{
+	text-align: center;
+	padding: 5px;
+	letter-spacing: 1px;
+}
+/*文章标题*/
+.blog dl dt input.title{
+	width: 200px;
+	height: 25px;
+	border: 1px solid #ccc;
+	font-size: 14px;
+	color: #666;
+}
+.blog dl dt{
+	padding: 0 0 0 10px;
+}
+.blog dl dd{
+	padding: 10px;
+}
+/*文章内容*/
+.blog dl textarea.content{
+	width: 360px;
+	height: 100px;
+	max-height: 100px;
+	max-width: 360px;
+	background: #fff;
+	border: 1px solid #ccc;
+}
+.blog .textInfo{
+	padding: 10px 0 5px 0;
+	text-align: center;
+	color: red;
+}
+.blog .submit{
+	width: 107px;
+	height: 33px;
+	border: none;
+	cursor: pointer;
+	border-radius: 10px;
+    background: #a9d9a7;
+    color: #fff;
+	font-size: 18px;
+    display: block;
+    text-align: center;
+    line-height: 33px;
+    letter-spacing: 2px;
+}
+/*注册*/
+#reg{
+	display: none;
+	color: #666;
+	left: 40%;
+}
+/*注册中的表单*/
+#reg form{
+	padding: 0 60px;
+	height: 200px;
+}
+#reg form ul li{
+	margin-bottom: 15px;
+	height: 20px;
+}
+#reg form ul li input{
+	padding: 5px;
+    width: 100%;
+    border: 1px solid #e6dada;
+    background: #fff;
+    font-size: 12px;
+    box-sizing: border-box;
+}
+#reg form ul li input.inputHover{
+	border: 1px solid #6DB2E4;
+}
+#reg form ul li a{
+	background: #6F9E83;
+    border: none;
+    width: 100%;
+    height: 30px;
+    border-radius: 10px;
+    cursor: pointer;
+    display: inline-block;
+    text-align: center;
+    line-height: 30px;
+    color: #fff;
+    font-size: 20px;
+   
+}
+#reg form ul li.yz{
+	display: none;
+}
+#reg form ul li.yz .icon{
+	display: inline-block;
+	width: 18px;
+	height: 18px;
+	background: url(../img/icon.png) no-repeat -315px -33px ;
+}
+#reg form ul li.yz .formright{
+	display: inline-block;
+    vertical-align: top;
+}
+/*登录标题*/
+#login h2,#reg h2,.phone_big h2, .blog h2,.skin h2{
+	height: 40px;
+	text-align: center;
+	letter-spacing: 1px;
+	color: #666;
+	background:#f0f0f0;
+	line-height: 40px;
+	margin-bottom: 20px;
+	cursor: move;
+}
+#login h2>span,#reg h2>span,.phone_big h2 span,.blog h2>span,.skin h2>span{
+	position: relative;
+    float: right;
+    height: 40px;
+    width: 40px;
+    color: #97b9ab;
+    cursor: pointer;
+    z-index: 10;
+    background: url(../img/close.png) no-repeat center center;
+}
+/*输入框*/
+#login .text{
+	width: 200px;
+	height: 25px;
+	border: 1px solid #ccc;
+	background: #fff;
+	padding-left: 10px;
+	line-height: 25px;
+}
+#login .user,#login .upwd,#login .button{
+	padding: 10px 0;
+	text-align: center;
+}
+/*登录按钮*/
+#login .button{
+	cursor: pointer;
+	text-align: center;
+}
+#login .button .sub{
+	width: 120px;
+    height: 25px;
+    line-height: 25px;
+    text-align: center;
+    border-radius:7px;
+    font-size: 16px;
+    background-color:#8cc3c6;
+    color: #fff;
+    border: 0;
+    cursor: pointer;
+}
+#login .button .sub:hover{
+	background-color:#6aa2b2;
+}
+#login .other{
+	text-align: right;
+	padding:3px 10px 0 0;
+	color: #494747;
+}
+#login .info {
+    text-align: center;
+    color: #fd0d1c;
+    padding: 0 0 10px 0;
+}
+/*遮罩层*/
+#screen{
+	position: absolute;
+	height: 100%;
+	left: 0;
+	top: 0;
+	background: #000;
+	z-index: 9999;
+	filter:alpha(opacity=30);
+	opacity: 0.3;
+	display: none;
+}
+/*菜单栏*/
+.navBar{
+	width: 465px;
+	height: 53px;
+	background: #B8B6B6;
+	margin: 50px auto 0 auto;
+	position: relative;
+	border-radius: 10px;
+	color: #fff;
+}
+/*菜单栏中的ul*/
+.navBar ul{
+	position: absolute;
+	left: 20px;
+	z-index:1;
+}
+.navBar ul li{
+	width: 85px;
+	height: 52px;
+	float: left;
+	text-align: center;
+	font-weight: bold;
+	line-height: 52px;
+	cursor: pointer;
+}
+.navBar .nav_bg{/*背景颜色*/
+	width: 85px;
+	height: 52px;
+	background: rgba(116, 111, 111, 0.54);
+	background:black\9;
+	position: absolute;
+	border-radius: 10px;
+	text-align: center;
+	left:20px;
+	z-index:2;
+	opacity: 0.5;
+	filter: alpha(opacity=50);
+	overflow: hidden;
+}
+/*背景颜色上的文字*/
+.navBar  .white{
+	z-index: 3;
+	color: #fff;
+	left: 0;
+	width:425px;
+}
+.navBar .about{
+	left: 20px;
+	z-index: 4;
+	cursor: pointer;
+}
+/*主页面*/
+.main{
+	width: 900px;
+	margin: 50px auto;
+}
+/*左侧区域*/
+.slidebar{
+	width: 250px;
+	height: 570px;
+	background: #eee\9;
+	float: left;
+	color:#333;
+}
+.slidebar h2,.index div.container h2{
+	width: 248px;
+	height: 30px;
+	line-height: 30px;
+	font-size: 14px;
+	text-indent: 10px;
+	border: 1px solid #ccc;
+	border-bottom: none;
+	cursor: pointer;
+	background: rgba(194, 176, 176, 0.32);
+	color:#514646 ;
+}
+.slidebar ul{
+	height: 150px;
+	border: 1px solid #ccc;
+	margin: 0 0 10px 0;
+}
+.slidebar li{
+	height: 30px;
+	line-height: 30px;
+	background:rgba(173, 172, 172, 0.55);
+	background: #CCCCCC\9;
+}
+.slidebar li a{
+	color: #333;
+}
+/*右侧区域*/
+.index{
+	width:630px;
+	height: 550px;
+	float: right;
+}
+.index div.container{
+	
+}
+.index div.container h2 s{
+	float: right;
+    padding: 0 10px 0 0;
+    text-decoration: none;
+}
+.index div.container h2{
+	width: 628px;
+}
+.index div.container p{
+	height: 130px;
+	border: 1px solid #ccc;
+	margin: 0 0 10px 0;
+	overflow: hidden;
+	padding: 10px;
+	text-indent:1em;
+	background:rgba(248, 248, 248, 0.55);
+	background: #CCCCCC\9;
+}
+/*广告条*/
+.banner{
+	width: 900px;
+	height: 150px;
+	float: left;
+	margin: 10px 0;
+	position: relative;
+}
+/*广告条下的图片*/
+.banner img{
+	display: block;
+	position: absolute;
+	top: 0;
+	left: 0;
+}
+.banner ul{
+	position: absolute;
+	top: 128px;
+	left: 420px;
+	z-index: 4;
+}
+.banner ul li{
+	float: left;
+	padding: 0 5px;
+	font-size: 14px;
+	color: #999;
+	cursor: pointer;
+}
+.banner span{
+	position: absolute;
+	width: 900px;
+	height:25px;
+	top: 125px;
+	left: 0;
+	background: #333333;
+	opacity: 0.3;
+	filter: alpha(opacity=30);
+	z-index: 3;
+}
+.banner strong{
+	position: absolute;
+	top: 130px;
+	left: 10px;
+	z-index: 4;
+	color: #FFFFFF;
+}
+/*图片加载区域*/
+.phone{
+	width: 900px;
+	float: left;
+	background: #edf1e9;
+	padding: 10px 0 0 0;
+}
+.phone dl{
+	width: 225px;
+	height: 270px;
+	float: left;
+	margin: 5px 0;
+}
+.phone dl dt{
+	width: 200px;
+	height: 250px;
+	background: #eee;
+	margin: 0 auto;
+}
+.phone dl dd{
+	height: 25px;
+	line-height: 25px;
+	text-align: center;
+}
+.phone dl img{
+	display: block;
+	cursor: pointer;
+}
+/*图片展示*/
+.phone_big{
+	width: 620px;
+	height: 510px;
+	/*display: block;*/
+}
+.phone_big h2{
+	margin: 0;
+	z-index: 5;
+}
+/*大图*/
+.phone_big .big{
+	width: 620px;
+	height: 460px;
+	padding-top: 10px;
+}
+.phone_big .big img{
+	display: block;
+	margin: 0 auto;
+	position: relative;
+	top: 190px;
+	opacity: 0.3;
+	filter: alpha(opacity=30);
+}
+/*左右切换按钮*/
+.phone_big .big span{
+	display: block;
+	width: 50px;
+	height: 100px;
+	background: #000;
+	opacity: 0;
+	filter: alpha(opacity=0);
+	font-size: 60px;
+	color: #fff;
+	text-align: center;
+	line-height: 100px;
+	cursor: pointer;
+	position: absolute;
+}
+.phone_big .big .sl{
+	top: 210px;
+	left: 20px;
+	background: url(../img/prev.png) no-repeat center center;
+}
+.phone_big .big .sr{
+	top: 210px;
+	right: 20px;
+	background: url(../img/next.png) no-repeat center center;
+}
+.phone_big .big b{
+	display: block;
+	width: 300px;
+	height: 450px;
+	background: #000;
+	opacity: 0;
+	filter: alpha(opacity=0);
+	cursor: pointer;
+	position: absolute;
+}
+.phone_big .big .left{
+	top: 50px;
+	left: 10px;
+}
+.phone_big .big .right{
+	top: 50px;
+	right: 10px;
+}
+.phone_big .big s{
+	position: absolute;
+	bottom: 20px;
+	right: 20px;
+	color: #fff;
+	text-decoration: none;
+}
+/*版权*/
+.footer {
+    padding: 10px;
+    text-align: center;
+    background: #fff4f4;
+}
+.footer p {
+	color:16px;
+	padding: 5px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
